@@ -166,8 +166,8 @@ public class WifiReceiver extends BroadcastReceiver {
         if (WifiManager.SCAN_RESULTS_AVAILABLE_ACTION.equals(action)) {
             List<ScanResult> results = wifi.getScanResults();
             for (ScanResult R : results) {
-                writeLog("WIFI " + R.BSSID + " " + R.level + " "
-                        + R.SSID);
+                writeLog("AP " + R.BSSID + " " + R.level + " "
+                        + R.SSID + "GPS: ");
             }
             context.sendBroadcast(new Intent(ACTION_UPDATE));
             return;
