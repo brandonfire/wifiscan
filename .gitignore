@@ -1,0 +1,14 @@
+# osx meta
+.DS_Store
+
+# npm files
+node_modules/
+
+# local settings
+local.properties
+SSIDLogger/.idea/workspace.xml
+SSIDLogger/.idea/libraries
+
+# generated files
+SSIDLogger/.gradle/
+build/
